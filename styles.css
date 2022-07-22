@@ -1,0 +1,163 @@
+body{
+    background-color: black;
+    margin: 0;
+    font-family: 'Open sans',sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 0px;
+    width: auto;
+}
+
+.backg{
+}
+.container{
+    height:5rem;
+    padding: 0;
+    background-color: rgb(29, 26,24);
+}
+#logo{
+    text-decoration: none;
+    font-size: 2rem;
+    color: orange;
+    margin-left: 0;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style: none;
+}
+header li{
+    margin: 0 1rem;
+}
+header li a{
+    text-decoration: none;
+    color: orange;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+}
+header li a:hover{
+    text-decoration: none;
+    color: rgb(5,5,5);
+    background-color: orange;
+}
+main h2{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 3rem;
+}
+.display{
+    width:80%;
+    margin: 2rem auto;
+}
+.display ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.menu-btn{
+    display: none;
+}
+#sd{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(58, 56, 57);
+    display: none;
+    position: fixed;
+    top: 0;
+}
+#sd:target{
+    display: block;
+}
+#sd ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    margin: 0;
+}
+#sd a{
+    color: rgb(253,239,213);
+    font-size: 2rem;
+    text-decoration: none;
+}
+#sd li{
+    margin: 1.25rem;
+}
+.display img{
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+.content p{
+    padding: 1rem;
+    text-align: center;
+}
+.item{
+    background-color: rgb(228, 206, 182);
+    border-radius: 6px;
+    overflow: hidden;
+    list-style: none;
+}
+.content{
+    padding: 10%;
+    text-align: center;
+}
+.btn{
+    background-color: rgb(228,157,44);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 24px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: rgb(136, 77, 9);
+}
+
+@media (max-width:768px){
+    .display ul{
+        grid-template-columns: 1fr;
+    }
+    .backg h2{
+        font-size: 1.5rem;
+    }
+    header li a{
+        display: none;
+    }
+    
+    .menu-btn{
+        width: 3rem;
+        height: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .25rem;
+        margin-right: .25rem;
+    }
+
+    .menu-btn span{
+        width: 100%;
+        height: 3px;
+        background-color: white;
+    }
+
+}
+
+/* #xyz:hover{
+    transform:scale(1.1);*/
+
+/* #xyz:hover{
+    transform:rotate(180deg);*/
+
+/* #xyz{
+    transition:transform 0.5s ease-out 1s;*/
